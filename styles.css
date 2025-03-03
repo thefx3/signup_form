@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Arsenal";
+    src: url(fonts/ArsenalSC-Bold.ttf);
+    src: url('fonts/ArsenalSC-BoldItalic.ttf')format('truetype'),
+         url('fonts/ArsenalSC-Italic.ttf')format('truetype'),
+         url('fonts/ArsenalSC-Regular.ttf')format('truetype');
+}
+
+
+:root {
+    --height: 800px;
+    --background-color:rgb(245, 253, 253);
+    --second-color:rgb(172, 255, 255);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Arial";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.left {
+    width : 35%;
+    height: var(--height);
+}
+
+/* move the image to the left */
+img {
+    margin-left: -150px;
+}
+
+
+/* right side */
+.right {
+    width : 70%;
+    height: var(--height);
+    background-color: var(--background-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column;
+    
+    border: 2px solid blue;
+}
+
+/* right side content */
+.right > * {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.bottom, .top{
+    background-color: var(--second-color);
+    flex: 3.5;
+}
+
+.middle {
+    flex:3;
+}
+
+p:first-child{
+    margin-top: 100px;
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
