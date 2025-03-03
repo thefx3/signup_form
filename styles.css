@@ -85,35 +85,45 @@ p {
     border: none;
     margin: 2rem 0;
     width:100%;
+    display: flex;
+    flex-flow: column;
 }
+
 
 legend {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
 .row {
- 
+    display: flex;
+    flex-flow: row;
 }
 
+.form-row {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+}
 
 label {
+    letter-spacing: 0.1rem;
     font-size: 1rem;
     text-transform: uppercase;
     justify-content: space-between;
     color: var(--second-text-color);
     font-weight: bold;
-
 }
 
 input {
     padding: 0.5rem;
     margin: 0.5rem 0;
-    margin-right: 15px;
-    border: 1px solid #6b6161;
+    margin-bottom: 2rem;
+    border: 1px solid #928282;
     border-radius: 4px;
+    width:80%;
 }
 
 
