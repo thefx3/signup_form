@@ -101,6 +101,8 @@ img {
 }
 
 .middle {
+    padding-left: 2rem;
+    padding-right: 2rem;
     flex:1;
 }
 
@@ -170,7 +172,7 @@ button {
     border-radius: 8px;
     background-color: var(--third-color);
     color: white;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     cursor: pointer;
     width:250px;
@@ -180,4 +182,23 @@ a {
     text-decoration: none;
     color: var(--third-color);
     font-weight: bold;
+}
+
+input:focus, button {
+    outline: none;
+    box-shadow: 2px 2px 3px var(--third-color);
+
+}
+
+input:invalid{
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid green;
+    /* background-color: hsl(147, 62%, 80%); */
+}
+
+#confirm-password:invalid{
+    background-color: hsl(0, 62%, 80%);
 }
